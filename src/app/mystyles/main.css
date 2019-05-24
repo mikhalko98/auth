@@ -1,0 +1,374 @@
+#preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.collapsible li.active .collapsible-body{
+    display: block;
+}
+body {
+    margin: 0;
+    background: #EBEDEF;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    position: relative;
+    bottom: 0px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    background: #B0E0E6;
+    overflow: hidden;
+}
+
+.block-left {
+    position: absolute;
+    float: left;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    height: 100%;
+    background-image: url("./baby.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.block-right {
+    position: relative;
+    float: right;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    height: 100%;
+    background: #FFFFFF;
+}
+.dropdown {
+    position: relative;
+    float: right;
+    display: inline-block;
+    width: auto;
+}
+
+.langbtn {
+    position: relative;
+    float: right;
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid #FFEBCD;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 100px;
+    height: 40px;
+}
+
+.langbtn:hover {
+    background-color: #FFEBCD;
+}
+
+.dropdown-child {
+    position: absolute;
+    width: 100px;
+    left: 0;
+    top: 100%;
+    display: none;
+    background-color: #FFFFFF;
+}
+
+.dropdown-child a {
+    opacity: 1;
+    color: black;
+    line-height: 30px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+.text_mark_top {
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+}
+
+.mark_top {
+    width: 35%;
+}
+
+.mark_top img {
+    float: right;
+}
+
+.text_top {
+    width: 65%;
+    text-align: left;
+    color: #2E8B57;
+}
+.signUp_logIn {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+.signUp {
+    margin-left: 10%;
+    width: 50%;
+    text-align: center;
+}
+
+.signUp a {
+    opacity: 0.8;
+    color: #2E8B57;
+}
+
+.color:hover {
+    background: #53ea93;
+}
+
+.logIn {
+    margin-right: 10%;
+    position: relative;
+    width: 50%;
+    text-align: center;
+    color: #0000FF;
+    text-shadow: 0 0 1px;
+}
+
+.logIn hr {
+    box-shadow: 0 0 5px;
+    margin: auto;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    background-color: #0000FF;
+    height: 5px;
+}
+
+hr {
+    width: 100%;
+    margin: 0;
+    background-color: #2E8B57;
+    opacity: 0.2;
+    border: none;
+    height: 5px;
+}
+input:hover {
+    border-color: green;
+}
+.forms_first {
+    top: 20px;
+    width: 100%;
+}
+
+.email_form {
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 12px;
+    width: 60%
+}
+
+input[name=email] {
+    width: 100%;
+    height: 35px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.pass_form {
+    position: relative;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 12px;
+    width: 60%
+}
+
+input[name=password] {
+    width: 100%;
+    height: 35px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.pass_form a {
+    cursor: pointer;
+    float: right;
+    opacity: 0.5;
+    color: #2E8B57;
+}
+.incorectlog_pass {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 35px;
+    width: 60%;
+    display: none;
+}
+
+.incorectlog_pass p {
+    color: red;
+    font-size: 12px;
+}
+
+.button_form_first {
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+    width: 60%
+}
+input[name=logIn] {
+    width: 100%;
+    height: 35px;
+    background-color: #2E8B57;
+    border-radius: 25px;
+    border-style: solid;
+    opacity: 0.5;
+    color: #FFFFFF;
+}
+._or_ {
+    position: relative;
+    margin: auto;
+    margin-top: 35px;
+    width: 60%
+}
+
+._or_ p {
+    color: #0000FF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form_clarification_below {
+    position: relative;
+    margin: auto;
+    margin-top: 35px;
+    width: 60%
+}
+
+.form_clarification_below p {
+    text-align: center;
+    font-size: 13px;
+    color: #2E8B57;
+}
+.phone_number {
+    position: relative;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 12px;
+    width: 60%
+}
+
+input[name=phone_number] {
+    width: 100%;
+    height: 35px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.incorectphone_number {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    width: 60%;
+    display: none;
+}
+
+.incorectphone_number p {
+    color: red;
+    font-size: 12px;
+}
+
+.button_form_second {
+    position: relative;
+    margin: auto;
+    margin-top: 35px;
+    width: 60%
+}
+
+input[name=verification_code] {
+    width: 100%;
+    height: 35px;
+    background-color: #2E8B57;
+    border-radius: 25px;
+    border-style: solid;
+    opacity: 0.5;
+    color: #FFFFFF;
+}
+
+.contact_us {
+    position: relative;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    width: auto;
+    text-align: center;
+}
+
+.contact_us a {
+    font-size: 12px;
+    opacity: 0.6;
+    color: #2E8B57;
+}
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    display: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 350px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.close:hover {
+    cursor: pointer;
+    background: #00d9ff;
+}
